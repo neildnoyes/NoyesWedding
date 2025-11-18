@@ -225,7 +225,6 @@ footer {
   overflow: hidden;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
   background-color: var(--white);
-  padding: 1rem;
 }
 
 .map-container h2 {
@@ -391,12 +390,18 @@ footer {
     header.hero h1 {
         font-size: 2.5rem;
     }
+    
+    header.hero p {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 1rem; 
+    }
+    
     section {
         padding: 4rem 6%;
     }
     
     .map-container {
-        padding: 0.5rem;
         margin: 2rem auto;
     }
 
@@ -451,13 +456,24 @@ footer {
 
     /* Perfectly centered X */
     .menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg); /* top bar rotates 45° */
+        transform: rotate(45deg); /* top bar rotates 45° */
     }
     .menu-toggle.active .bar:nth-child(2) {
-    opacity: 0; /* middle bar disappears */
+        opacity: 0; /* middle bar disappears */
     }
     .menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg); /* bottom bar rotates -45° */
+        transform: rotate(-45deg); /* bottom bar rotates -45° */
+    }
+    
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-section img {
+        width: 80%;
+        margin-bottom: 1.5rem;
     }
     
     .venue-section {
