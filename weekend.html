@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Weekend</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodations.html">Accommodations & Travel</a></li>
+                <li><a href="weekend.html">The Weekend</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section class="info-section">
+                <img src="images/fountain_3.jpg" alt="Charleston Welcome Dinner" />
+                <div class="info-text">
+                    <h2 style="font-family: 'Playfair Display', serif;">The Weekend</h2>
+                    <p>Join us for a weekend of love, laughter, and celebration.</p>
+                    <ul>
+                    <li><strong>Friday:</strong> Welcome dinner in downtown Charleston</li>
+                    <li><strong>Saturday:</strong> Ceremony & Reception at Legare Waring House</li>
+                    <li><strong>Sunday:</strong> Farewell brunch</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+          <p>© 2026 Karlee & Neil · Designed with love for our Charleston celebration</p>
+        </footer>
+        <script>
+          const menu = document.getElementById('mobile-menu');
+          const navLinks = document.querySelector('.nav-links');
+
+          menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            navLinks.classList.toggle('show');
+          });
+        </script>
+    </body>
+</html>

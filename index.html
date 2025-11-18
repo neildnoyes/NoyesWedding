@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Wedding – The Legare Waring House</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+  <body>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accommodations.html">Accommodations & Travel</a></li>
+        <li><a href="weekend.html">The Weekend</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="rsvp.html">RSVP</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1>Karlee & Neil</h1>
+      <p>June 8, 2026 · The Legare Waring House · Charleston, SC</p>
+    </header>
+    <section>
+      <h2>Welcome to Our Wedding</h2>
+      <p class="intro">
+        We are so excited to celebrate our special day with our closest friends and family at the breathtaking <em>Legare Waring House</em> in Charleston, South Carolina. Explore this site for travel information, weekend details, and RSVP options.
+      </p>
+
+      <div class="venue-section">
+        <img src="images/grounds_2.jpg" alt="Legare Waring House Grounds" />
+          <div class="venue-text">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem;">The Venue</h3>
+            <p>
+              Nestled within the historic Charles Towne Landing State Historic Site, the Legare Waring House offers timeless Southern charm with ancient oak trees draped in Spanish moss, manicured gardens, and elegant water views. We fell in love with its romantic atmosphere and are so thrilled to share it with all of you.
+            </p>
+            <br />
+            <p>
+              Address: 1500 Old Towne Rd, Charleston, SC 29407<br />
+              Learn more at <a href="https://southcarolinaparks.com/legare-waring-house" target="_blank">southcarolinaparks.com</a>
+            </p>
+          </div>
+      </div>
+
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="rsvp.html" class="button">RSVP Now</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Karlee & Neil · Designed with love for our Charleston celebration</p>
+    </footer>
+        <script>
+          const menu = document.getElementById('mobile-menu');
+          const navLinks = document.querySelector('.nav-links');
+
+          menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            navLinks.classList.toggle('show');
+          });
+        </script>
+  </body>
+</html>
+
+

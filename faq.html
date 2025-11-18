@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FAQ</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodations.html">Accommodations & Travel</a></li>
+                <li><a href="weekend.html">The Weekend</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info-section">
+            
+            <img src="images/piano.jpg" alt="FAQ Image" />
+            <div class="info-text">
+                <h2 style="font-family: 'Playfair Display', serif;">Frequently Asked Questions</h2>
+                <p><strong>What is the dress code?</strong><br/>Formal attire is requested — think elegant evening wear or cocktail dresses and suits.</p>
+                <p><strong>Is the ceremony indoors or outdoors?</strong><br/>The ceremony will be outdoors under the oak trees; the reception will follow in the courtyard.</p>
+                <p><strong>Can I bring a guest?</strong><br/>Please refer to your invitation — we kindly ask that only those listed attend.</p>
+            </div>
+        </section>
+    </main>
+        <footer>
+          <p>© 2026 Karlee & Neil · Designed with love for our Charleston celebration</p>
+        </footer>
+        
+        <script>
+          const menu = document.getElementById('mobile-menu');
+          const navLinks = document.querySelector('.nav-links');
+
+          menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            navLinks.classList.toggle('show');
+          });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,490 @@
+:root {
+    --cream: #f8f5f1;
+    --white: #ffffff;
+    --black: #1b1b1b;
+    --green: #6b7761;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+header.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/trees_3.jpg') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+header.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+header.hero p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+nav {
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+section {
+    padding: 6rem 10%;
+}
+
+section h2, h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.venue-section {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+.venue-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.9rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #59634f;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--white);
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    flex-shrink: 0;
+}
+
+.venue-section {
+    display: flex;
+    flex-direction: row-reverse; /* 💡 flips image to the right side */
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+.venue-section img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.venue-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row-reverse; /* right-side image */
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 3rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-section img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Hamburger menu container */
+.menu-toggle {
+  display: none;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menu-toggle .bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 10px;
+  transform: translateY(-50%);
+  transition: all 0.35s ease;
+}
+
+/* Stack bars vertically using translateY */
+.menu-toggle .bar:nth-child(1) {
+  transform: translateY(-10px); /* top bar */
+}
+.menu-toggle .bar:nth-child(2) {
+  transform: translateY(0); /* middle bar */
+}
+.menu-toggle .bar:nth-child(3) {
+  transform: translateY(10px); /* bottom bar */
+}
+
+/* Google Map Container Styling */
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.map-container h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--black);
+  letter-spacing: 0.5px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+/* RSVP form styles - add near other form / card styles */
+.rsvp-form {
+  max-width: 980px;
+  margin: 2rem auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.25rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  font-size: 1rem;
+  color: var(--black);
+}
+
+/* Each row */
+.rsvp-form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Labels */
+.rsvp-form label {
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  color: var(--black);
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+}
+
+/* Inputs, textarea, select */
+.rsvp-form input[type="text"],
+.rsvp-form input[type="email"],
+.rsvp-form input[type="number"],
+.rsvp-form select,
+.rsvp-form textarea {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e6e3df;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+  font-size: 1rem;
+}
+
+.rsvp-form select option {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* subtle inner shadow and focus */
+.rsvp-form input:focus,
+.rsvp-form select:focus,
+.rsvp-form textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 4px 18px rgba(102,115,93,0.12);
+}
+
+/* Radio choices layout */
+.choice-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rsvp-form .radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 999px;
+  background: #faf9f7;
+  border: 1px solid #f0efe9;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* hide native focus ring but keep accessible focus */
+.rsvp-form .radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* Submit / button styling - match .button but slightly larger */
+.rsvp-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rsvp-form .rsvp-submit {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  background: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 16px rgba(91,105,86,0.12);
+}
+
+.rsvp-form .rsvp-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(91,105,86,0.14);
+}
+
+/* RSVP Form Messages */
+.form-message {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    animation: fadeIn 0.4s ease;
+}
+
+.form-success {
+    background-color: #dfe7dc;  /* soft muted green */
+    color: #3e4b38;             /* deeper green text */
+}
+
+.form-error {
+    background-color: #f7e2e2;
+    color: #7a2c2c;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    
+    header.hero h1 {
+        font-size: 2.5rem;
+    }
+    section {
+        padding: 4rem 6%;
+    }
+    
+    .map-container {
+        padding: 0.5rem;
+        margin: 2rem auto;
+    }
+
+    .map-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+    
+    /* Show hamburger on mobile */
+    .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    /* Mobile nav menu */
+    nav ul.nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        z-index: 90;
+    }
+
+    nav ul.nav-links.show {
+    transform: translateY(0);
+    opacity: 1;
+    }
+
+    nav ul.nav-links li {
+    margin: 1rem 0;
+    }
+
+    nav a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    }
+
+    /* Perfectly centered X */
+    .menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg); /* top bar rotates 45° */
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0; /* middle bar disappears */
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg); /* bottom bar rotates -45° */
+    }
+    
+    .venue-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .venue-section img {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .venue-text {
+        text-align: left;
+    }
+    
+    .rsvp-form {
+        padding: 1.25rem;
+        margin: 1.25rem;
+    }
+
+    .rsvp-form .form-actions {
+        justify-content: center;
+    }
+
+    .rsvp-form .rsvp-submit {
+        width: 100%;
+    }
+}
