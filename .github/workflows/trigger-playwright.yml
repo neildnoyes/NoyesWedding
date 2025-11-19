@@ -1,0 +1,19 @@
+name: Trigger Playwright Tests
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  trigger-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Playwright Test Repo
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PLAYWRIGHT_REPO_TOKEN }}
+          repository: neildnoyes/PlaywrightWebsiteAutomation
+          event-type: run-playwright-tests
+          client-payload: '{"site_url":"https://neildnoyes.github.io/NoyesWedding/"}'
