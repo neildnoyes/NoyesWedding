@@ -24,15 +24,16 @@ main {
 }
 
 header.hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/trees_3.jpg') center/cover no-repeat;
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  text-align: center;
-  letter-spacing: 1px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/E57A3635_edit.png') center 17%/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 header.hero h1 {
@@ -386,6 +387,11 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    
+    header.hero {
+        background-size: 400%;
+        background-position: center 38%;
+    }
     
     header.hero h1 {
         font-size: 2.5rem;
