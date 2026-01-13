@@ -389,8 +389,8 @@ footer {
 @media (max-width: 768px) {
     
     header.hero {
-        background-size: 400%;
-        background-position: center 38%;
+        background-size: 525%;
+        background-position: center 35%;
     }
     
     header.hero h1 {
