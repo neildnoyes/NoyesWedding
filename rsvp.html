@@ -140,6 +140,11 @@
 
                 // Show success message immediately
                 successMsg.style.display = "block";
+                
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
 
                 // Optional: clear form
                 form.reset();

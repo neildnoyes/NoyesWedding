@@ -16,4 +16,4 @@ jobs:
           token: ${{ secrets.PLAYWRIGHT_REPO_TOKEN }}
           repository: neildnoyes/PlaywrightWebsiteAutomation
           event-type: run-playwright-tests
-          client-payload: '{"site_url":"https://neildnoyes.github.io/NoyesWedding/"}'
+          client-payload: '{"site_url":"https://noyeswedding.com/"}'
